@@ -1,0 +1,21 @@
+{{> header}}
+
+<form class="form-signin" action="/login" method="POST">
+    <img class="mb-4" src="image/aa2.png" alt="logo" width="300">
+    <h1 class="h3 mb-3 font-weight-normal">Data Loader</h1>
+    <label for="inputUserName" class="sr-only">Username</label>
+    <input type="text" id="inputUserName" name="username" class="form-control" placeholder="Username" required autofocus>
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required>
+    <div class="checkbox mb-3">
+        <label>
+            <input type="checkbox" name="remember-me"> Remember me
+        </label>
+    </div>
+    <!--<div class="alert alert-danger" role="alert">Invalid Username or Password</div>
+    <div class="alert alert-success" role="alert">Successfully logged out</div>-->
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    <p class="mt-5 mb-3 text-muted"><small>&copy; 2017-2018 CITIC Telecom International Ltd.</small></p>
+</form>
+
+{{> footer}}
